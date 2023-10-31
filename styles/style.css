@@ -19,6 +19,7 @@ html {
   display: flex;
   margin: auto;
   justify-content: center;
+  align-items: center;
   
 }
 
@@ -52,15 +53,11 @@ ol {
 }
 
 .content {
-  margin-top: 133px;
   display: flex;
-  align-content: flex-end;
+  align-items: flex-end;
   gap: 30px;
   width: 1140px;
-}
-
-.result {
-  margin-top: 80px;
+  margin: 0 auto;
 }
 
 .result__video-container {
@@ -108,7 +105,7 @@ ol {
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  color: rgb(255 255 255 / 0.7);
+  color: white; 
   font-family: inherit;
   font-size: inherit;
   background-color: transparent;
@@ -154,7 +151,8 @@ ol {
   flex-direction: column;
   align-items: flex-start;
   flex-grow: 1;
-
+  min-height: 534px;
+  gap: 23px;
 }
 
 .title {
@@ -163,7 +161,6 @@ ol {
   font-weight: 700;
   line-height: 0.94;
   text-transform: uppercase;
-  margin-bottom: 26px;
 }
 
 .content__accent {
@@ -172,17 +169,14 @@ ol {
 
 .content__list {
   max-height: 298px;
-  min-width: 420px;
   overflow: auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.content__list-item {
-  width: 394px;
 }
 
 .content__card-link { 
@@ -193,9 +187,8 @@ ol {
 
 .content__video-card {
   display: flex;
-  align-content: flex-start;
   justify-content: space-between;
-  height: 107px;
+  padding: 2px;
 }
 
 .content__video-card-description-container {
@@ -232,28 +225,28 @@ ol {
 }
 
 .button:hover {
-  cursor: pointer;
   text-decoration: underline;
 }
 
 .button:focus {
   outline: none;
-  outline: 1px solid #fff;
-  outline-offset: 2px;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
 }
 
 .button:active {
   background-color: #545050;
-  text-decoration: none;
 }
 
 .content__video-card:hover {
-  text-decoration: underline;
+  text-decoration: underline 2px #FFF;
 }
 
 .content__card-link_current {
   background-color: #545050;
-  text-decoration: none;
 }
   
 .content__card-link:focus-visible { 
@@ -261,9 +254,7 @@ ol {
 } 
 
 .search-form__textfield:focus {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
-  outline: none;
+  outline: 1px solid #fff; 
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
@@ -289,10 +280,9 @@ ol {
   outline: none;
 }
 
-
-
-
-
+.search-form__textfield:active {
+  outline: none;
+}
 
 
 
